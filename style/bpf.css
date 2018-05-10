@@ -1,0 +1,984 @@
+@font-face {
+  font-family: 'Dadagrotesk';
+  src: url('./fonts/DadaGrotesk-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dadagrotesk';
+  src: url('./fonts/DadaGrotesk-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dadagrotesk';
+  src: url('./fonts/DadaGrotesk-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dadagrotesk';
+  src: url('./fonts/DadaGrotesk-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dadagrotesk';
+  src: url('./fonts/DadaGrotesk-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5D9375;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #5D9375;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #5D9375;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 1280px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #043d41;
+  font-size: 14px;
+  line-height: 1.4em;
+  background: #eef0ed;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  font-family: Dadagrotesk, sans-serif;
+  font-size: 50px;
+  line-height: 1.1em;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-family: Dadagrotesk, sans-serif;
+  font-size: 36px;
+  line-height: 1.4em;
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 32px;
+  line-height: 1.4em;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+h5 {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h6 {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  font-family: Dadagrotesk, sans-serif;
+  color: #043d41;
+  font-size: 12px;
+  line-height: 1.3em;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.bpf-wide-button {
+  width: 100%;
+}
+
+.text-green-muted {
+  color: #5d9375;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+.text-green-muted:hover {
+  color: #5d9375 !important;
+}
+
+p {
+  margin-bottom: 0px;
+  color: #6f887a;
+  font-size: 18px;
+  line-height: 1.8em;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.bpf-btn-outline-primary {
+  color: white;
+  background-color: #f5816c;
+  background-image: none;
+  border: none;
+  transition-duration: 300ms;
+  padding: 4px 22px;
+  border-radius: 4px;
+}
+
+.bpf-btn-outline-green {
+  background: #5D9375;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  height: 50px;
+  border: none;
+  line-height: 26px;
+  padding: 12px 40px;
+  transition-duration: 300ms;
+  text-align: center;
+}
+
+.bpf-tel {
+  min-width: 120px;
+  text-align: center;
+  height: 16px;
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 0px;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.bpf-tel:hover {
+  text-decoration: none;
+}
+
+.btn-outline-primary:hover {
+  background-color: #f5816c;
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .2), hsla(0, 0%, 100%, .2));
+  border: none;
+}
+
+.header-container {
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  background: url(../images/hero-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.location-header-container {
+  background: url(../images/point-arena-shore.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.redwood-header-container {
+  background: url(../images/coastal-redwood.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.tanoak-header-container {
+  background: url(../images/tanoak-2.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.douglas-fir-header-container {
+  background: url(../images/douglas-fir-2.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.bishop-pine-header-container {
+  background: url(../images/bishop-pine.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.article-header-container {
+  background: #eef0ed;
+  background-size: cover;
+  color: #043d41;
+}
+
+.body-container {
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  background: #eef0ed;
+}
+
+.article-body-container {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  background: #eef0ed;
+  color: #043d41;
+}
+
+.leaf-divider {
+  position: relative;
+  top: -20px;
+  width: 100%;
+  height: 50px;
+  background: url(../images/Leaf-divider.png) center no-repeat;
+  background-size: contain;
+}
+
+.scroll-down {
+  display: block;
+  height: 8px;
+}
+
+.left-scroll-leaf {
+  position: relative;
+  left: 10px;
+  z-index: 1;
+  width: 40px;
+  transform: rotate(50deg);
+}
+
+.right-scroll-leaf {
+  position: relative;
+  top: -2px;
+  right: 10px;
+  z-index: 0;
+  width: 40px;
+  transform: rotate(-50deg);
+}
+
+.bpf-card {
+  position: relative;
+}
+
+.photo-detail {
+  position: absolute;
+  z-index: -1;
+  width: 500px;
+}
+
+.bark {
+  left: -179px;
+  top: -75px;
+}
+
+.moss-container {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -150px;
+  right: -150px;
+  background: url(../images/Moss.jpg) top right no-repeat;
+  background-position: 18px -10px;
+  background-size: contain;
+  z-index: -1;
+}
+
+.moss {
+  top: 0px;
+  left: 200px;
+}
+
+.footer-accent-leaves {
+  position: absolute;
+  left: -40px;
+  top: -22px;
+  width: 144px;
+  z-index: 3;
+}
+
+.footer-accent-branch {
+  position: absolute;
+  right: -15px;
+  bottom: -42px;
+  width: 585px;
+  height: 382px;
+  background-image: url(../images/Greens.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.trail-details {
+  position: absolute;
+  width: 100%;
+  height: 3086px;
+}
+
+.footer-line {
+  position: relative;
+  z-index: 5;
+  border-top: 1px solid rgba(4, 61, 65, .12);
+}
+
+.footer-container {
+  background: white;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.welcome-background {
+  position: absolute;
+  width: 100%;
+  height: 1200px;
+  background: url(../images/hero-bg.jpg) center no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.top-nav-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 350px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, #161714 100%);
+  z-index: 1;
+}
+
+.article-fade {
+  height: 160px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 70%);
+}
+
+.bpf-nav {
+  height: 100px;
+  z-index: 2;
+  position: relative;
+}
+
+.bg-gray {
+  background-color: #192021;
+}
+
+.text-green {
+  color: #abc6a1;
+}
+
+.text-logo {
+  height: 28px;
+  margin-top: -3px;
+}
+
+.mark-logo {
+  display: none;
+  height: 24px;
+}
+
+nav {
+  font-family: Dadagrotesk, sans-serif;
+}
+
+nav a {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  height: 100px;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding: 10px 10px 6px 12px;
+  color: #abc6a1;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a.current {
+  color: #fff;
+  font-weight: 700;
+}
+
+.hero-section {
+  height: 620px;
+  position: relative;
+}
+
+.location-hero-section {
+  height: 670px;
+  position: relative;
+}
+
+.tree-hero-section {
+  height: 670px;
+  position: relative;
+}
+
+.hero-heading {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 300px;
+  color: #fff;
+  font-size: 70px;
+  line-height: 1.3em;
+  font-weight: 700;
+  position: relative;
+}
+
+.hero-subheading {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  color: #b9c6bf;
+  line-height: 1.6em;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.forest-location {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 170px;
+  position: relative;
+  color: white;
+}
+
+.tree-type {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 110px;
+  position: relative;
+  color: white;
+}
+
+.location-heading {
+  max-width: 70%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 70px;
+  line-height: 1.3em;
+  font-weight: 700;
+  position: relative;
+  line-height: 80px;
+}
+
+.location-subheading {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  margin-left: 15%;
+  color: #b9c6bf;
+  line-height: 1.6em;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  font-size: 20px;
+  position: relative;
+}
+
+.location-cta {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  margin-left: 15%;
+  color: white;
+  position: relative;
+}
+
+.location-card {
+  background: white;
+  box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 5;
+}
+
+.first-card {
+  margin-top: -60px !important;
+}
+
+.article-type {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 70px;
+  position: relative;
+  color: #5d9375;
+}
+
+.article-heading {
+  max-width: 70%;
+  margin: 0 auto;
+  font-size: 70px;
+  line-height: 1.3em;
+  font-weight: 700;
+  position: relative;
+  line-height: 80px;
+}
+
+.article-subheading {
+  max-width: 60%;
+  color: #b9c6bf;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  margin-left: 15%;
+  line-height: 1.6em;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  font-size: 20px;
+  position: relative;
+}
+
+.article-hero-section {
+  height: auto;
+  position: relative;
+}
+
+.article-image {
+  box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 5;
+}
+
+.article-body-subheading {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 64px;
+  margin-bottom: 24px;
+  color: #004d55;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.article-p {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-left: 15%;
+  color: #043d41;
+}
+
+.article-start::first-letter {
+  font-size: 200%;
+  color: #043d41;
+}
+
+button {
+  background: #5D9375;
+  color: white;
+  border: 0;
+  height: 50px;
+  width: 150px;
+  padding: 8px 22px;
+  border-radius: 4px;
+}
+
+.hero-second-heading {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+  color: #fff;
+  font-size: 50px;
+  line-height: 1.3em;
+  font-weight: 700;
+  position: relative;
+}
+
+.hero-second-subheading {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  color: #b9c6bf;
+  line-height: 1.6em;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.bpf-card-title {
+  font-weight: 700;
+  font-family: 'Dadagrotesk';
+}
+
+.bpf-card-footer {
+  color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  text-align: center;
+  max-width: 120px;
+  margin: 0 auto;
+  top: 15px;
+}
+
+.card-image-left {
+  width: 100%;
+  float: right;
+  border-radius: 6px;
+  box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.location-card-image {
+  width: 96%;
+  margin: 2%;
+}
+
+.brown-text {
+  color: #D0B8A2 !important;
+}
+
+.location-card-split-image {
+  background: blue center no-repeat;
+  background-size: cover;
+  height: 460px;
+  color: white;
+}
+
+.redwood-1 {
+  background-image: url(../images/redwood-detail-1.jpg);
+}
+
+.redwood-2 {
+  background-image: url(../images/redwood-detail-2.jpg);
+}
+
+.tanoak-1 {
+  background-image: url(../images/tanoak-detail-1.jpg);
+}
+
+.tanoak-2 {
+  background-image: url(../images/tanoak-detail-2.jpg);
+}
+
+.douglas-fir-1 {
+  background-image: url(../images/douglas-fir-detail-1.jpg);
+}
+
+.douglas-fir-2 {
+  background-image: url(../images/douglas-fir-detail-2.jpg);
+}
+
+.bishop-pine-1 {
+  background-image: url(../images/bishop-pine-detail-1.jpg);
+}
+
+.bishop-pine-2 {
+  background-image: url(../images/bishop-pine-detail-2.jpg);
+}
+
+.tree-detail-header {
+  color: white;
+  margin-top: 300px;
+  font-family: "Lato", monospace;
+}
+
+.tree-detail-text {
+  font-family: "Lato", monospace;
+  color: #90B09E;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.locations-moss {
+  margin-top: -50px;
+  padding-left: 50px;
+}
+
+.select-area {
+  color: #5D9375;
+}
+
+.select-area:hover {
+  color: #5D9375;
+}
+
+.select-area img {
+  margin-left: 4px;
+}
+
+.card-image-right {
+  width: 100%;
+  float: left;
+  border-radius: 6px;
+  box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.stump {
+  position: relative;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.logo-form {
+  opacity: 0.38;
+  height: 40px;
+}
+
+.path-trail {
+  display: block;
+}
+
+.path-1 {
+  height: 40vh;
+  margin-bottom: -20px;
+  margin-top: -14px;
+  background-image: url(../images/Path-1.svg);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.path-2 {
+  height: 40vh;
+  margin-top: -120px;
+  margin-bottom: -20px;
+  background-image: url(../images/Path-2.svg);
+  background-position: 60% 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.path-3 {
+  height: 40vh;
+  margin-top: -120px;
+  margin-bottom: -70px;
+  background-image: url(../images/Path-3.svg);
+  background-position: 50% 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+  .hero-heading {
+    font-size: 50px;
+  }
+  .hero-subheading {
+    font-size: 18px;
+  }
+  .location-heading {
+    font-size: 42px;
+    margin-top: 20px;
+  }
+  .location-subheading {
+    font-size: 16px;
+    max-width: 70%;
+  }
+  .hero-second-heading {
+    font-size: 30px;
+  }
+  .hero-second-subheading {
+    font-size: 16px;
+  }
+  .text-logo {
+    display: none;
+  }
+  .mark-logo {
+    display: block;
+  }
+  .path-trail {
+    background: none;
+    height: 120px;
+  }
+  .first-card {
+    margin-top: -25px !important;
+  }
+  .tree-detail-header {
+    font-size: 16px;
+  }
+  .tree-detail-text {
+    font-size: 10px;
+  }
+  .footer-accent-leaves {
+    display: none;
+  }
+  .footer-accent-branch {
+    display: none;
+  }
+  .photo-detail {
+    display: none;
+  }
+  .footer-heading {
+    padding-top: 60px;
+  }
+}
+
+a.text-black {
+  color: black;
+}
+
+.footer-constrain {
+  max-width: 1062px;
+}
+
+.footer-small {
+  font-size: 12px;
+}
+
+.footer-cta {
+  font-size: 30px;
+}
+
+.footer-social-icon {
+  border-radius: 100%;
+  background: #5d9375;
+}
+
+.footer-copy {
+  color: #B9C6BF;
+}
+
+.info-form {
+  background: #064D53;
+  position: relative;
+  top: -50px;
+  z-index: 5;
+  max-width: 416px;
+  margin: 0 auto;
+}
+
+.info-form input {
+  background: none;
+  -webkit-tap-highlight-color: none;
+  color: #5D9375;
+  text-align: center;
+  border: none;
+  font-size: 18px;
+  line-height: 50px;
+  border-bottom: 1px solid #1f5f65;
+  transition-duration: 300ms;
+  width: 100%;
+}
+
+.info-form input:focus {
+  outline-width: 0;
+}
+
+.info-form input:focus::placeholder {
+  opacity: 0;
+}
+
+.info-form button {
+  background: #5D9375;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  height: 50px;
+  font-size: 1rem;
+}
+
+.footer-card-header {
+  display: block;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Dadagrotesk, sans-serif;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.3em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.footer-text {
+  font-family: Lato, sans-serif;
+  position: relative;
+  padding-top: 5px;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.footer-link {
+  color: #043d41;
+}
+
+.footer-link:hover {
+  color: #043d41;
+}
+
+@media (max-width: 767px) {
+  .path-trail {
+    background: none;
+    height: 60px;
+  }
+  .card-image-left {
+    width: 100%;
+    float: none;
+  }
+  .bpf-card-footer {
+    top: 10px;
+  }
+  .card-image-right {
+    width: 100%;
+    float: none;
+  }
+  .info-form {
+    top: 20px;
+  }
+  .bpf-tel {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
